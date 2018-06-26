@@ -17,9 +17,6 @@ namespace BigEyesAppServices.Models
         [StringLength(45)]
         public string DownloadUrl { get; set; }
 
-        [StringLength(45)]
-        public string VersionUpdatecol { get; set; }
-
         public int? Platform { get; set; }
 
         public bool? IsForced { get; set; }

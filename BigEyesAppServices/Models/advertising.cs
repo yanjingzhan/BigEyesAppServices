@@ -11,6 +11,9 @@ namespace BigEyesAppServices.Models
     {
         public int Id { get; set; }
 
+        [StringLength(45)]
+        public string Name { get; set; }
+
         public int? Position { get; set; }
 
         public int? Type { get; set; }

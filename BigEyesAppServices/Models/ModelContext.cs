@@ -71,9 +71,9 @@ namespace BigEyesAppServices.Models
                 .Property(e => e.DownloadUrl)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<VersionUpdate>()
-                .Property(e => e.VersionUpdatecol)
-                .IsUnicode(false);
+            //modelBuilder.Entity<VersionUpdate>()
+            //    .Property(e => e.VersionUpdatecol)
+            //    .IsUnicode(false);
         }
     }
 }
