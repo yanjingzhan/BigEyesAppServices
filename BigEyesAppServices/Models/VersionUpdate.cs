@@ -14,7 +14,7 @@ namespace BigEyesAppServices.Models
         [StringLength(45)]
         public string Version { get; set; }
 
-        [StringLength(45)]
+        [StringLength(500)]
         public string DownloadUrl { get; set; }
 
         public int? Platform { get; set; }
