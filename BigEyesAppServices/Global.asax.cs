@@ -24,6 +24,7 @@ namespace BigEyesAppServices
         public override void Init()
         {
             this.PostAuthenticateRequest += (sender, e) => HttpContext.Current.SetSessionStateBehavior(SessionStateBehavior.Required);
+            ChongGuanDotNetUtils.Helpers.CryptHelper.Key = "uioasldjkasldkjd";
             base.Init();
         }
     }
