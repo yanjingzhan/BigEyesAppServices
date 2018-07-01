@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Routing;
 
 namespace BigEyesAppServices
@@ -11,6 +12,10 @@ namespace BigEyesAppServices
     {
         public static void Register(HttpConfiguration config)
         {
+            //跨域FUCK
+            var cors = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(cors);
+
             // Web API 配置和服务
 
             // Web API 路由
