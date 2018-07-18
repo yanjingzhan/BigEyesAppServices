@@ -11,7 +11,7 @@ using System.Web.Http;
 
 namespace BigEyesAppServices.Controllers
 {
-    //[RequestAuthorize]
+    [RequestAuthorize]
     public class AdvertisingController : ApiController
     {
         [HttpPost]
